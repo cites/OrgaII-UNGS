@@ -3,8 +3,20 @@
 
 int main()
 {
-    int altura, base;
+    float altura, base;
+    float area;
 
-    
+    altura = 25;
+    base = 36.7;
+    area = base * altura;
+
+
+    printf("%f \n", area);
+
+    return 0;
+
+
+
+
 
 }
