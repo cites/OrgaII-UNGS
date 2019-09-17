@@ -3,6 +3,8 @@
 
 int main()
 {
+    int altura, base;
+
     
 
 }
