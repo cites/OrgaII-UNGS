@@ -12,6 +12,7 @@ fmt        db "area: %f", 10, 0
 section .text
 
 main:
+    mov ebp, esp; for correct debugging
         fld dword [radio] ;Load Floating Point
         fmul st0, st0 ;Toma el top del stack y lo multiplica
         fldpi ; Pone a Pi en el top del stack
