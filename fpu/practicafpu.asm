@@ -6,7 +6,7 @@ extern printf
 
 section .data
 
-    fmt db "res %f", 10, 0
+    fmt db "suma:  %f", 10, 0
 
     c dq -1.0E10
     d dq 6.02E23
@@ -19,14 +19,17 @@ main:
     
     fldz ; carga 0.0
     fld1 ; carga 1.0
+    fadd 
+
+    
+
     fld qword [c]; carga -1.0E10
     fld qword [d]
     fldpi ; carga pi
-    
-    
+
     push fmt
     call printf
     add ESP, 12
-    
-    xor eax, eax
+
+
     ret
